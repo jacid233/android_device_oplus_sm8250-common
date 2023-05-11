@@ -69,9 +69,6 @@ function blob_fixup() {
         odm/lib64/libgf_hal_G6.so)
             sed -i "s|ro.boot.flash.locked|vendor.flash.locked\x00|" "${2}"
             ;;
-        odm/lib64/libui.so)
-            patchelf --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
-            ;;
         vendor/lib64/hw/camera.qcom.so)
             grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
             ;;
