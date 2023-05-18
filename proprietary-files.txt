@@ -418,6 +418,7 @@ odm/lib64/libAncHumanRetain.so
 odm/lib64/libAncHumanSegFigureFusion.so
 odm/lib64/libAncSegmentSdk.so
 odm/lib64/libBokehPre.so
+odm/lib64/libCNamaSDK_vendor.so
 odm/lib64/libCOppLceTonemapAPI.so
 odm/lib64/libDeVIS.so
 odm/lib64/libEIS.so
@@ -426,6 +427,7 @@ odm/lib64/libFaceBeautyPre.so
 odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libFilterWrapper.so
 odm/lib64/libHdrVideo.so
+odm/lib64/libNamaWrapper.so
 odm/lib64/libNightVideo.so
 odm/lib64/libOGLManager.so
 odm/lib64/libOPLUS_SCPortrait.so
