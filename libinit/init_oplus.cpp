@@ -45,6 +45,9 @@ void vendor_load_properties() {
         case 136859: // EU
             OverrideProperty("ro.product.product.device", "RE879AL1");
             break;
+        case 19161: //OPPO Ace2 CN
+            OverrideProperty("ro.product.product.device","OP4AD9");
+            break;
         default:
             LOG(ERROR) << "Unexpected project version: " << prj_version;
     }
