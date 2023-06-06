@@ -115,6 +115,9 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_SOURCE := kernel/oplus/sm8250
 TARGET_KERNEL_CONFIG := vendor/op4ad9_defconfig
 
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r383902
+
 # oss dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
