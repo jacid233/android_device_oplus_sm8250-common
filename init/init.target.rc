@@ -46,6 +46,11 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
 
+service loggy /vendor/bin/loggy.sh
+    class core
+    user root
+    oneshot
+
 on early-fs
     start vold
 
