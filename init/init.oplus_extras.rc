@@ -1,0 +1,27 @@
+on boot
+
+    # Disable round limit
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chmod 0666 /proc/touchpanel/oplus_tp_direction
+
+    # DC-Dimming
+    chmod 0666 /sys/kernel/oplus_display/dimlayer_bl_en
+
+    # HBM
+    chmod 0666 /sys/kernel/oplus_display/hbm
+
+    # Game Mode
+    chown system system /proc/touchpanel/game_switch_enable
+    chmod 0666 /proc/touchpanel/game_switch_enable
+
+    # Measured FPS
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
+
+    # Powershare
+    chown system system /proc/wireless/enable_tx
+    chmod 0666 /proc/wireless/enable_tx
+
+    # Vibration intensity
+    chown system system /sys/devices/platform/soc/a8c000.i2c/i2c-3/3-005a/leds/vibrator/level
+    chmod 0666 /sys/devices/platform/soc/a8c000.i2c/i2c-3/3-005a/leds/vibrator/level
