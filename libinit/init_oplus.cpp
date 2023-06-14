@@ -52,6 +52,11 @@ void vendor_load_properties() {
         case 136730: // bitra CN (Dragon Ball Edition)
             OverrideProperty("ro.product.product.device", "RE5473");
             break;
+        case 19161: //Ace2 CN
+            OverrideProperty("ro.product.product.device", "OP4AD9");
+            OverrideProperty("ro.product.product.model", "PDHM00");
+            OverrideProperty("ro.product.product.name", "PDHM00");
+            break;
         default:
             LOG(ERROR) << "Unexpected project version: " << prjname;
     }
