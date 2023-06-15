@@ -113,7 +113,9 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=2048
 
+ifneq ($(filter userdebug eng, $(TARGET_BUILD_VARIANT)),)
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+endif
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 TARGET_KERNEL_CONFIG := vendor/op4ad9_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
