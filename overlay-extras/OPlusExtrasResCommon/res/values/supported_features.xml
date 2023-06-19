@@ -29,9 +29,6 @@
     <!-- Whether device supports AdrenoBoost -->
     <bool name="config_deviceSupportsAdrenoBoost">false</bool>
 
-    <!-- Whether device supports Touch Screen Gestures -->
-    <bool name="config_deviceSupportsTouchScreenGestures">false</bool>
-
     <!-- Whether to show Jitter Test -->
     <bool name="config_deviceSupportsJitterTest">false</bool>
 
