@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/lib64/libgf_hal_G6.so)
+            sed -i "s|ro.boot.flash.locked|vendor.flash.locked\x00|" "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s|my_product|product|" "${2}"
             ;;
