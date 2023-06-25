@@ -211,7 +211,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.multihal
+    android.hardware.sensors@2.0-service.multihal.oplus_kona
 
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
