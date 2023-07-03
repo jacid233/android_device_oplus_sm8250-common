@@ -944,8 +944,10 @@ vendor/lib64/libqcodec2_platform.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 
-# Media
-odm/etc/media_codecs_c2.xml
+# Media - from RMX3370_11.C.10
+vendor/etc/media_codecs_c2.xml|490211cad553ce69d536c0e55848b6a7d499260d
+vendor/etc/media_codecs_performance_c2.xml|e16b7768c91f1e15ca3ddc146a77645605a1d090
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
 
 # Native public libraries
 vendor/etc/public.libraries.txt
