@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from realme GT Neo2 5G (RMX3370_11.C.09).
+## from OPPO Ace2 (PDHM00_11.H.21).
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -654,6 +654,7 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.factory@2.2.so
+vendor/lib64/vendor.qti.data.factory@2.3.so
 vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
@@ -1046,6 +1047,10 @@ vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
+# Osense
+odm/lib64/libosensehalclient.so
+odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
+
 # Perf
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/lib/vendor.oplus.hardware.performance@1.0.so
@@ -1291,6 +1296,7 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.0.so
@@ -1449,6 +1455,13 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 # Trusted User Interface
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
+# Vibrator firmware
+odm/firmware/aw8697_haptic.bin
+odm/firmware/aw8697_haptic_170.bin
+odm/firmware/aw8697_haptic_235.bin
+odm/firmware/aw8697_haptic_235_19161.bin
+odm/firmware/awinic_haptic_params.bin
 
 # VPP
 vendor/bin/vppservice
