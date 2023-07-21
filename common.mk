@@ -307,6 +307,7 @@ $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
+    OPlusApertureResCommon \
     OPlusDialerResCommon \
     OPlusFrameworksResCommon \
     OPlusExtrasResCommon \
