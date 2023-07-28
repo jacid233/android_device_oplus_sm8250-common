@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_captive_portal_http_url" translatable="false">http://conn-service-cn-04.allawntech.com/generate204</string>
+    <string name="config_captive_portal_https_url" translatable="false">https://conn-service-cn-05.allawntech.com/generate204</string>
+</resources>
