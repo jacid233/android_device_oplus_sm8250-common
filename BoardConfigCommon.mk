@@ -126,6 +126,11 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=2048
 
+ifneq ($(filter userdebug eng, $(TARGET_BUILD_VARIANT)),)
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+endif
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ADDITIONAL_FLAGS += NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_SOURCE := kernel/oplus/sm8250
