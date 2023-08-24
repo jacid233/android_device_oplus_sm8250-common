@@ -134,6 +134,9 @@ TARGET_KERNEL_CONFIG := vendor/sm8250_defconfig
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
