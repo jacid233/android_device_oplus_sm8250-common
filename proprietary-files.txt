@@ -341,7 +341,11 @@ odm/etc/camera/gesture/tt_hand_det_v11.0.model
 odm/etc/camera/gesture/tt_hand_gesture_v11.1.model
 odm/etc/camera/gesture/tt_hand_kp_v6.0.model
 odm/etc/camera/gesture/tt_hand_lr_v3.0.model
+#odm/etc/camera/megvii/cache
+#odm/etc/camera/megvii/siq_ocl_cache
+#odm/etc/camera/megvii/superiq_model
 odm/etc/camera/model/DocDetectV15.xbin
+#odm/etc/camera/model/license.lic
 odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e47_s1.bundle
 odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle
 odm/etc/camera/pfb_bin/PreCalVarBinary.bin
@@ -399,9 +403,13 @@ odm/etc/camera/eis_camera.vcfg
 odm/etc/camera/fb_default
 odm/etc/camera/fwk_config.json
 odm/etc/camera/gasryuv_1.2_wp.model
+#odm/etc/camera/license_release_fdc.lic
 odm/etc/camera/model_fdc.data
 odm/etc/camera/mtStereoParams.bin
 odm/etc/camera/mwStereoParams.bin
+#odm/etc/camera/mwStereoParams_aftersale.bin
+#odm/etc/camera/settings_fdc.txt
+#odm/etc/camera/stereoParams_aftersale.bin
 odm/lib/libDeVIS.so
 odm/lib/libc++_shared.so
 odm/lib64/camera/components/com.oplus.node.aiaftrack.so
@@ -430,6 +438,7 @@ odm/lib64/libAncHumanRetain.so
 odm/lib64/libAncHumanSegFigureFusion.so
 odm/lib64/libAncSegmentSdk.so
 odm/lib64/libBokehPre.so
+#odm/lib64/libCNamaSDK_vendor.so
 odm/lib64/libCOppLceTonemapAPI.so
 odm/lib64/libDeVIS.so
 odm/lib64/libEIS.so
@@ -439,6 +448,7 @@ odm/lib64/libFaceBeautyPre.so
 odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libFilterWrapper.so
 odm/lib64/libHdrVideo.so
+#odm/lib64/libNamaWrapper.so
 odm/lib64/libNightVideo.so
 odm/lib64/libOGLManager.so
 odm/lib64/libOPLUS_SCPortrait.so
