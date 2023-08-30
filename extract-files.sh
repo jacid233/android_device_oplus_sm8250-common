@@ -75,6 +75,10 @@ function blob_fixup() {
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "AB 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
+        vendor/lib64/sensors.ssc.so)
+            sed -i "s/qti.sensor.wise_light/android.sensor.light\x00/" "${2}"
+            "${SIGSCAN}" -p "F1 E9 D3 84 52 49 3F A0 72" -P "F1 A9 00 80 52 09 00 A0 72" -f "${2}"
+            ;;
         vendor/lib/libgui1_vendor.so)
             patchelf --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
