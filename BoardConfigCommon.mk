@@ -134,10 +134,25 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ADDITIONAL_FLAGS += NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_SOURCE := kernel/oplus/sm8250
+
+ifeq ($(TARGET_USES_OSS_KERNEL), true)
 TARGET_KERNEL_CONFIG := vendor/sm8250_defconfig
+else 
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/oplus/prebuilt-kernel/Image
+TARGET_KERNEL_CONFIG := vendor/sm8250_defconfig
+endif
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+ifeq ($(TARGET_USES_PREBUILT_DTB), true)
+BOARD_PREBUILT_DTBIMAGE_DIR := device/oplus/prebuilt-kernel/dtb
+endif
+
+ifeq ($(TARGET_USES_PREBUILT_DTBO), true)
+BOARD_PREBUILT_DTBOIMAGE := device/oplus/prebuilt-kernel/dtbo.img
+else
 BOARD_KERNEL_SEPARATED_DTBO := true
+endif
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
