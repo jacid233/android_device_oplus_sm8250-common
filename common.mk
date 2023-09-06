@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+$(call inherit-product, device/oplus/sm8250-common/phone-xhdpi-8192-dalvik-heap.mk)
 
 # Inherit proprietary libraries
 $(call inherit-product, vendor/oplus/sm8250-common/sm8250-common-vendor.mk)
